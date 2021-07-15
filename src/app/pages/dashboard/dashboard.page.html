@@ -1,0 +1,13 @@
+<ion-content>
+  <app-header></app-header>
+  <ion-segment (ionChange)="segmentChanged($event)" value="yourLists">
+    <ion-segment-button value="yourLists">
+      <ion-label>Tus Listas</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="sharedWithU">
+      <ion-label>Compartidas Contigo</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <app-list></app-list>
+  <app-recently-edited></app-recently-edited>
+</ion-content>
